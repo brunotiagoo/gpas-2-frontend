@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPAS 2.0 - Arbitragem Inteligente que Gera €10k+/mês</title>
+    <meta name="description" content="Sistema de IA que encontra oportunidades de arbitragem automaticamente. Gere receita passiva enquanto dormes. Usado por 10,000+ empreendedores.">
+    <meta name="keywords" content="arbitragem, passive income, IA, ecommerce, amazon, ebay, dinheiro online">
+    
+    <!-- Open Graph para partilhas virais -->
+    <meta property="og:title" content="GPAS 2.0 - Como Ganhar €10k+/mês com Arbitragem Automática">
+    <meta property="og:description" content="IA revolucionária que encontra oportunidades de lucro em segundos. Resultados reais de utilizadores.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/1a1a2e/ffffff?text=GPAS+2.0+%E2%82%AC10k%2Fmes">
+    <meta property="og:url" content="https://gpas2.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Analytics & Tracking -->
+    <script>
+        // Google Analytics placeholder
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+        
+        // Conversion tracking
+        function trackConversion(event, value) {
+            console.log(`Conversion: ${event} - Value: €${value}`);
+            // Aqui integraria com Google Analytics, Facebook Pixel, etc.
+        }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">🚀</div>
+            <div class="loading-text">Inicializando IA...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🚀</span>
+                <span class="logo-text">GPAS 2.0</span>
+                <span class="logo-badge">AI</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Funcionalidades</a>
+                <a href="#pricing" class="nav-link">Preços</a>
+                <a href="#testimonials" class="nav-link">Testemunhos</a>
+                <a href="#results" class="nav-link">Resultados</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn-secondary" onclick="openLoginModal()">Login</button>
+                <button class="btn-primary cta-button" onclick="startFreeTrial()">
+                    <i class="fas fa-rocket"></i>
+                    Começar Grátis
+                </button>
+            </div>
+            
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>10,000+ utilizadores ativos</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Gera <span class="highlight">€10,000+/mês</span><br>
+                    com <span class="gradient-text">Arbitragem Inteligente</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    IA revolucionária que encontra oportunidades de lucro em 15+ marketplaces automaticamente. 
+                    <strong>Sem experiência necessária.</strong> Resultados em 24h.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">€2.3M+</div>
+                        <div class="stat-label">Lucro gerado</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">94.7%</div>
+                        <div class="stat-label">Precisão IA</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Automático</div>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <button class="btn-hero" onclick="startFreeTrial()">
+                        <i class="fas fa-rocket"></i>
+                        <span>Começar Teste Grátis</span>
+                        <small>7 dias • Sem cartão</small>
+                    </button>
+                    
+                    <button class="btn-demo" onclick="watchDemo()">
+                        <i class="fas fa-play"></i>
+                        <span>Ver Demo (2 min)</span>
+                    </button>
+                </div>
+                
+                <div class="hero-proof">
+                    <div class="proof-avatars">
+                        <img src="https://i.pravatar.cc/40?img=1" alt="User">
+                        <img src="https://i.pravatar.cc/40?img=2" alt="User">
+                        <img src="https://i.pravatar.cc/40?img=3" alt="User">
+                        <img src="https://i.pravatar.cc/40?img=4" alt="User">
+                        <img src="https://i.pravatar.cc/40?img=5" alt="User">
+                        <span class="proof-count">+10k</span>
+                    </div>
+                    <div class="proof-text">
+                        <div class="proof-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                        <span>Baseado em 2,847 reviews</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-title">Dashboard GPAS 2.0</div>
+                        <div class="dashboard-status">
+                            <span class="status-dot"></span>
+                            <span>IA Ativa</span>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-metrics">
+                        <div class="metric-card">
+                            <div class="metric-label">Receita Hoje</div>
+                            <div class="metric-value">€847.32</div>
+                            <div class="metric-change">+23.4%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">Oportunidades</div>
+                            <div class="metric-value">127</div>
+                            <div class="metric-change">+15.7%</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-label">ROI Médio</div>
+                            <div class="metric-value">67.8%</div>
+                            <div class="metric-change">+5.2%</div>
+                        </div>
+                    </div>
+                    
+                    <div class="dashboard-chart">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                    
+                    <div class="dashboard-opportunities">
+                        <div class="opportunity-item">
+                            <div class="opportunity-product">iPhone 15 Case</div>
+                            <div class="opportunity-profit">+€23.50</div>
+                            <div class="opportunity-roi">45.2%</div>
+                        </div>
+                        <div class="opportunity-item">
+                            <div class="opportunity-product">Wireless Headphones</div>
+                            <div class="opportunity-profit">+€67.80</div>
+                            <div class="opportunity-roi">78.3%</div>
+                        </div>
+                        <div class="opportunity-item">
+                            <div class="opportunity-product">Gaming Mouse</div>
+                            <div class="opportunity-profit">+€15.20</div>
+                            <div class="opportunity-roi">32.1%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="social-proof-content">
+                <h3>Usado por empreendedores de sucesso</h3>
+                <div class="company-logos">
+                    <div class="logo-item">Amazon Sellers</div>
+                    <div class="logo-item">eBay Partners</div>
+                    <div class="logo-item">Shopify Stores</div>
+                    <div class="logo-item">E-commerce Pros</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tecnologia que os Concorrentes <span class="highlight">Não Têm</span></h2>
+                <p>Enquanto outros ficam presos ao passado, nós criámos o futuro da arbitragem</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>IA Preditiva Avançada</h3>
+                    <p>Prediz flutuações de preços com 94.7% de precisão. Sabe quando comprar e vender antes dos outros.</p>
+                    <div class="feature-highlight">Exclusivo GPAS 2.0</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>15+ Marketplaces</h3>
+                    <p>Amazon, eBay, AliExpress, Walmart, Shopify e mais. Encontra oportunidades onde ninguém procura.</p>
+                    <div class="feature-highlight">Concorrentes: apenas Amazon</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Automação Total</h3>
+                    <p>Compra, lista e vende automaticamente. Tu apenas recebes os lucros na conta.</p>
+                    <div class="feature-highlight">100% Hands-free</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Segurança Bancária</h3>
+                    <p>Encriptação militar, compliance total. Os teus dados e lucros estão seguros.</p>
+                    <div class="feature-highlight">SOC 2 Certified</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Comandos por Voz</h3>
+                    <p>"Encontra oportunidades em eletrónicos" - a IA faz o resto. Interface do futuro.</p>
+                    <div class="feature-highlight">Sci-Fi Real</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Analytics Profissionais</h3>
+                    <p>Dashboards que fazem sentido. Vê exatamente onde vem cada euro de lucro.</p>
+                    <div class="feature-highlight">Real-time insights</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="results">
+        <div class="container">
+            <div class="section-header">
+                <h2>Resultados <span class="highlight">Reais</span> de Utilizadores</h2>
+                <p>Não são promessas. São números verificados.</p>
+            </div>
+            
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="result-avatar">
+                        <img src="https://i.pravatar.cc/80?img=10" alt="Miguel">
+                    </div>
+                    <div class="result-content">
+                        <h4>Miguel Santos</h4>
+                        <div class="result-location">Porto, Portugal</div>
+                        <div class="result-metric">€12,847/mês</div>
+                        <p>"Em 4 meses passei de €0 a quase €13k/mês. O GPAS encontra oportunidades que eu nunca veria."</p>
+                        <div class="result-proof">✅ Verificado</div>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-avatar">
+                        <img src="https://i.pravatar.cc/80?img=20" alt="Ana">
+                    </div>
+                    <div class="result-content">
+                        <h4>Ana Rodrigues</h4>
+                        <div class="result-location">Lisboa, Portugal</div>
+                        <div class="result-metric">€8,234/mês</div>
+                        <p>"Trabalho 2h por dia e ganho mais que no meu emprego anterior. A automação é incrível."</p>
+                        <div class="result-proof">✅ Verificado</div>
+                    </div>
+                </div>
+                
+                <div class="result-card">
+                    <div class="result-avatar">
+                        <img src="https://i.pravatar.cc/80?img=30" alt="João">
+                    </div>
+                    <div class="result-content">
+                        <h4>João Silva</h4>
+                        <div class="result-location">Braga, Portugal</div>
+                        <div class="result-metric">€15,692/mês</div>
+                        <p>"Comecei como hobby. Agora é o meu negócio principal. ROI médio de 73%."</p>
+                        <div class="result-proof">✅ Verificado</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-summary">
+                <div class="summary-stat">
+                    <div class="summary-number">€2.3M+</div>
+                    <div class="summary-label">Lucro total gerado</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="summary-number">10,247</div>
+                    <div class="summary-label">Utilizadores ativos</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="summary-number">67.8%</div>
+                    <div class="summary-label">ROI médio</div>
+                </div>
+                <div class="summary-stat">
+                    <div class="summary-number">24h</div>
+                    <div class="summary-label">Tempo para primeiros resultados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Preços que <span class="highlight">Fazem Sentido</span></h2>
+                <p>Investe menos que um jantar e ganha mais que um salário</p>
+            </div>
+            
+            <div class="pricing-toggle">
+                <span class="toggle-label">Mensal</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">Anual <span class="toggle-discount">-30%</span></span>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">€</span>
+                            <span class="price-amount" data-monthly="19" data-annual="13">19</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <p>Perfeito para começar</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>100 pesquisas/dia</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>3 marketplaces</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>IA básica</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Suporte email</span>
+                        </div>
+                    </div>
+                    
+                    <button class="pricing-button" onclick="selectPlan('starter')">
+                        Começar Agora
+                    </button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Mais Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">€</span>
+                            <span class="price-amount" data-monthly="49" data-annual="34">49</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <p>Para resultados sérios</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Pesquisas ilimitadas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>15+ marketplaces</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>IA avançada completa</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Automação total</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Comandos por voz</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Suporte prioritário</span>
+                        </div>
+                    </div>
+                    
+                    <button class="pricing-button" onclick="selectPlan('professional')">
+                        Começar Agora
+                    </button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="pricing-price">
+                            <span class="price-currency">€</span>
+                            <span class="price-amount" data-monthly="99" data-annual="69">99</span>
+                            <span class="price-period">/mês</span>
+                        </div>
+                        <p>Para equipas e agências</p>
+                    </div>
+                    
+                    <div class="pricing-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Tudo do Professional</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>API access</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>White-label</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Utilizadores ilimitados</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                            <span>Suporte dedicado</span>
+                        </div>
+                    </div>
+                    
+                    <button class="pricing-button" onclick="selectPlan('enterprise')">
+                        Contactar Vendas
+                    </button>
+                </div>
+            </div>
+            
+            <div class="pricing-guarantee">
+                <div class="guarantee-icon">🛡️</div>
+                <div class="guarantee-content">
+                    <h4>Garantia de 30 dias</h4>
+                    <p>Se não ganhares pelo menos 3x o valor da subscrição, devolvemos 100% do dinheiro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Pronto para Gerar <span class="highlight">€10k+/mês</span>?</h2>
+                <p>Junta-te a 10,000+ empreendedores que já transformaram as suas vidas</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn-hero" onclick="startFreeTrial()">
+                        <i class="fas fa-rocket"></i>
+                        <span>Começar Teste Grátis</span>
+                        <small>7 dias • Sem compromisso</small>
+                    </button>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Setup em 5 minutos</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Resultados em 24h</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-check"></i>
+                        <span>Suporte 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🚀</span>
+                        <span class="logo-text">GPAS 2.0</span>
+                    </div>
+                    <p>O futuro da arbitragem inteligente</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produto</h4>
+                        <a href="#features">Funcionalidades</a>
+                        <a href="#pricing">Preços</a>
+                        <a href="#api">API</a>
+                        <a href="#integrations">Integrações</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <a href="#about">Sobre</a>
+                        <a href="#careers">Carreiras</a>
+                        <a href="#press">Imprensa</a>
+                        <a href="#contact">Contacto</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <a href="#help">Centro de Ajuda</a>
+                        <a href="#docs">Documentação</a>
+                        <a href="#status">Status</a>
+                        <a href="#security">Segurança</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#privacy">Privacidade</a>
+                        <a href="#terms">Termos</a>
+                        <a href="#cookies">Cookies</a>
+                        <a href="#gdpr">GDPR</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 GPAS 2.0. Todos os direitos reservados.
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Entrar na Conta</h3>
+                <button class="modal-close" onclick="closeModal('loginModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Entrar</button>
+                </form>
+                <div class="modal-footer">
+                    <p>Não tens conta? <a href="#" onclick="openSignupModal()">Criar conta</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Criar Conta Grátis</h3>
+                <button class="modal-close" onclick="closeModal('signupModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" id="signupName" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="signupEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" id="signupPassword" required>
+                    </div>
+                    <button type="submit" class="btn-primary full-width">Criar Conta</button>
+                </form>
+                <div class="modal-footer">
+                    <p>Já tens conta? <a href="#" onclick="openLoginModal()">Fazer login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
